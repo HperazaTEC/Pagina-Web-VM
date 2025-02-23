@@ -1,6 +1,6 @@
 # Mi Sitio Web Genérico
 
-Este proyecto es un sitio web de ejemplo diseñado para demostrar un estilo limpio, profesional y moderno, inspirado en la identidad visual del Tec de Monterrey. Creado el **19 de febrero de 2025** por **Raúl**, este template es ideal para quienes desean partir de una base sólida y personalizable para sus proyectos web.
+Este proyecto es un sitio web de ejemplo diseñado para demostrar un estilo limpio, profesional y moderno, inspirado en la identidad visual del Tec de Monterrey. Creado el **19 de febrero de 2025** , este template es ideal para quienes desean partir de una base sólida y personalizable para sus proyectos web.
 
 ---
 
