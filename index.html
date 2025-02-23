@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--  
+====================================================================================  
+Ejemplo Genérico de Sitio Web  
+Diseño basado en plantilla proporcionada  
+Fecha: 19 de febrero del 2025  
+Autor: Raúl (opiniones y estilo casual)
+====================================================================================  
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Sitio Web Genérico</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  
+  <!-- Icon Font -->
+  <link rel="stylesheet" href="assets/css/icofont.min.css">
+  
+  <!-- Custom CSS -->
+  <style>
+    /* ==============================================================
+       VARIABLES INSTITUCIONALES - Basado en Tec de Monterrey
+    ============================================================== */
+    :root {
+      --tec-blue: #00274C;
+      --tec-white: #FFFFFF;
+      --tec-gray: #6c757d;
+    }
+    
+    /* ==============================================================
+       Reset y Configuración Global
+    ============================================================== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #F8F9FA;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--tec-blue);
+      line-height: 1.6;
+      padding: 40px;
+    }
+    
+    /* ==============================================================
+       Contenedor Principal
+    ============================================================== */
+    .pdf-container {
+      max-width: 900px;
+      margin: auto;
+      background-color: var(--tec-white);
+      padding: 40px;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* ==============================================================
+       Encabezado y Logo
+    ============================================================== */
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header img.logo-large {
+      max-width: 300px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--tec-blue);
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1rem;
+      color: var(--tec-gray);
+      margin-bottom: 5px;
+    }
+    
+    /* ==============================================================
+       Navegación Superior
+    ============================================================== */
+    nav {
+      margin-bottom: 40px;
+    }
+    nav ul {
+      list-style: none;
+      text-align: center;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: var(--tec-blue);
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    
+    /* ==============================================================
+       Secciones del Sitio Web
+    ============================================================== */
+    .section {
+      margin-bottom: 60px;
+    }
+    .section-heading {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: var(--tec-blue);
+      border-bottom: 2px solid var(--tec-blue);
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+    .section p {
+      font-size: 1rem;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+    
+    /* ==============================================================
+       Botón Personalizado
+    ============================================================== */
+    .btn-tec {
+      background-color: var(--tec-blue);
+      color: var(--tec-white);
+      border: 2px solid var(--tec-blue);
+      padding: 10px 20px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .btn-tec:hover {
+      background-color: var(--tec-white);
+      color: var(--tec-blue);
+    }
+    
+    /* ==============================================================
+       Footer
+    ============================================================== */
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      border-top: 1px solid #ccc;
+      color: var(--tec-blue);
+      font-size: 0.9rem;
+    }
+    
+    /* ==============================================================
+       Estilos para Impresión
+    ============================================================== */
+    @media print {
+      @page {
+        margin: 20mm;
+      }
+      body {
+        padding: 0;
+      }
+      .pdf-container {
+        border: none;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        display: none;
+      }
+    }
+    
+    /* ==============================================================
+       Espaciadores
+    ============================================================== */
+    .spacer {
+      height: 20px;
+    }
+  </style>
+  <!-- Fin de estilos personalizados -->
+</head>
+<body>
+  <div class="pdf-container">
+    <!-- ============================================================
+         Encabezado / Portada Principal
+    ============================================================ -->
+    <header>
+      <img src="assets/images/tec_logo.png" alt="Logo Institucional" class="logo-large">
+      <h1>Mi Sitio Web Genérico</h1>
+      <p>Bienvenido a nuestro espacio digital</p>
+    </header>
+    
+    <!-- ============================================================
+         Navegación Superior
+    ============================================================ -->
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#acerca">Acerca de</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    
+    <!-- ============================================================
+         Sección: Inicio
+    ============================================================ -->
+    <section id="inicio" class="section">
+      <h2 class="section-heading">Inicio</h2>
+      <p>
+        Este es un sitio web genérico diseñado para mostrar un estilo limpio y profesional utilizando los colores institucionales. Aquí encontrarás información sobre nuestros servicios, el equipo y cómo contactarnos.
+      </p>
+      <a href="#servicios" class="btn-tec">Conoce nuestros servicios</a>
+    </section>
+    
+    <!-- ============================================================
+         Sección: Servicios
+    ============================================================ -->
+    <section id="servicios" class="section">
+      <h2 class="section-heading">Servicios</h2>
+      <p>
+        Ofrecemos una amplia gama de servicios enfocados en la innovación tecnológica y soluciones financieras. Nuestro objetivo es brindar atención personalizada y de calidad para satisfacer las necesidades de cada cliente.
+      </p>
+      <p>
+        Desde el desarrollo de aplicaciones web hasta asesorías en transformación digital, nuestro equipo está preparado para ayudarte a alcanzar el éxito en cada proyecto.
+      </p>
+    </section>
+    
+    <!-- ============================================================
+         Sección: Acerca de
+    ============================================================ -->
+    <section id="acerca" class="section">
+      <h2 class="section-heading">Acerca de</h2>
+      <p>
+        Con años de experiencia en el mercado, nuestro equipo combina conocimientos en tecnología y finanzas para ofrecer soluciones integrales. Creemos en el poder de la innovación y en la mejora continua.
+      </p>
+      <p>
+        Nuestro compromiso es con la excelencia, y trabajamos día a día para superar las expectativas de nuestros clientes a través de procesos eficientes y creativos.
+      </p>
+    </section>
+    
+    <!-- ============================================================
+         Sección: Contacto
+    ============================================================ -->
+    <section id="contacto" class="section">
+      <h2 class="section-heading">Contacto</h2>
+      <p>
+        ¿Tienes alguna pregunta o necesitas más información? No dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte.
+      </p>
+      <p>
+        Puedes escribirnos al correo <strong>contacto@misitioweb.com</strong> o llamarnos al <strong>+52 55 1234 5678</strong>.
+      </p>
+    </section>
+    
+    <!-- ============================================================
+         Footer
+    ============================================================ -->
+    <footer>
+      <p>&copy; 2025 Mi Sitio Web Genérico. Todos los derechos reservados.</p>
+    </footer>
+    
+    <!-- ============================================================
+         Espaciadores Finales
+    ============================================================ -->
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+  </div> <!-- Fin de pdf-container -->
+  
+  <!-- ============================================================
+       Scripts: jQuery, Popper.js y Bootstrap JS
+  ============================================================ -->
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
